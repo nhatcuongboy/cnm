@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "riteway -r @babel/register 'src/components/**/*.test.js' | tap-nirvana",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -51,6 +51,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.1.0",
+    "jest": "^26.6.3",
     "regenerator-runtime": "^0.13.7",
     "riteway": "^6.2.1",
     "tap-color": "^1.2.0",
