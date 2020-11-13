@@ -1,4 +1,6 @@
 import React, { useReducer } from 'react';
+import { Button } from 'antd';
+import './Counter.scss';
 
 const initialState = { count: 0 };
 
@@ -17,9 +19,9 @@ function Counter() {
     const [state, dispatch] = useReducer(reducer, initialState);
     return (
         <div className="counter-comp">
-            Count: {state.count}
-            <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
-            <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+            <p>Count: {state.count}</p>
+            <Button onClick={() => dispatch({ type: 'decrement' })}>-</Button>
+            <Button onClick={() => dispatch({ type: 'increment' })}>+</Button>
         </div>
     );
 }
